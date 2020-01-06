@@ -1,0 +1,46 @@
+/* Style the footer */
+.gb-footer {
+    color: white;
+     
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1d262d;
+
+}
+
+.gb-footer p.creator{
+	padding-top: 3%;
+	text-align: center;
+	font-size: 90%;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+.columna {
+    flex: 10%;
+    padding-left: 25px;
+}
+.gb-footer div.columna div.fila div.columna h5 {
+    font-size: 15px;
+}
+div.lista1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.lista1 ul li a {
+    display: block;
+    color: #bfbfbf;
+    text-decoration: none;
+    font-size: 14px;
+}
+div.lista1 ul li a:hover {
+    color: #e6e6e6;
+}
+div.fila h6 {
+    font-size: 10px;
+}

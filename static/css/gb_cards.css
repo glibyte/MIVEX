@@ -1,0 +1,124 @@
+/* Style the counter cards */
+/*Productos*/
+.gb-card_1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.gb-card_1 .gb-content-img {
+  margin: auto;
+  width: 100px;
+  height: 120px;
+  /*recortar img*/
+  overflow: hidden;
+}
+.gb-card_1 img{
+  width: 100%;
+  height: auto;
+}
+
+.gb-card_1 .gb-content-text{
+  width: 100%;
+  height: 120px;
+}
+
+.gb-card_1 .gb-content-text h3{
+  font-size: 90%;
+  color: rgb(26, 26, 26);
+}
+
+.gb-card_1 .gb-content-text p{
+  color: black;
+  font-size: 90%;
+}
+
+.gb-card_1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Tiendas*/
+.gb-card_2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: white;
+}
+
+.gb-card_2 h3{
+margin: 0;
+}
+
+.gb-card_2 p{
+  margin-top: 10px;
+  }
+
+.gb-card_2 .gb-content-img {
+  float: left;
+  width: 25%;
+  margin-right: 20px;
+}
+/*Recortar la imagen*/
+.overflow{
+  height: 150px;
+	overflow: hidden;
+}
+
+.gb-card_2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Servicios*/
+.gb-card_3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: rgb(58, 58, 58);
+}
+
+.gb-card_3 p{
+  color: white;
+  background-color: #ad85f7;
+  padding: 10px;
+  font-size: 90%;
+  margin: 0%;
+}
+
+.gb-card_3 .gb-content-img {
+  width: 100%;
+}
+.gb-card_3 img{
+  width: 100%;
+}
+
+.gb-card_3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Responsive img */
+@media screen and (max-width: 800px) {
+    /*img tiendas*/
+    .gb-card_2 img{
+      display: block;
+      width: 100%;
+    }
+
+    .gb-card_2 .gb-content-img {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .overflow{
+      height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+  /*img tiendas*/
+  .overflow{
+    height: 130px;
+  }
+  
+}

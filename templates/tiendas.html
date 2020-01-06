@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tiendas | Mivex</title>
+{% extends "layout.html" %}
+{% block content %}
+<!--Contenido-->
+
+
+
+<!-- Responzive -->
+<div class="row gb-color-gris-1">
+  <!-- Columna Izquierda -->
+  <div class="column side">
+        
+  </div>
+
+  <!-- Columna Medio -->
+  <div class="column middle">
+<div class="gb-row">
+
+  {% for n in contact %}
+  <div class="gb-column_1">
+      <a href="#!" style="text-decoration: none; color:black;">
+    <div class="gb-card_2">
+      <div class="gb-content-img overflow">
+      <img src="{{ url_for('static',filename=n.2) }}">
+      </div>
+      <h3>{{n.1}}</h3>
+      <p>{{n.3}}</p>
+      {% if n.4 == 1%}
+        <p>Servicio a domicilio</p>
+        {% else %}
+        <p>No cuenta con servicio a domicilio</p>
+       {% endif %}
+      
+      <p>Tel: {{n.5}}</p>
+      <p>Direccion: {{n.6}}</p>
+      <p>Horario: {{n.7}} - {{n.8}}</p>
+    </div>
+  </a>
+  </div>
+  {% endfor %}
+
+</div>
+
+<div class="gb-row">
+
+    <div class="content-paginacion">
+      <div class="paginacion">
+        <a href="#" class="prev"><i class="fa fa-mail-reply"></i></a>
+        <a class="pageNumber active-pagination" href="#">1</a>
+        <a class="pageNumber" href="#">2</a>
+        <a class="pageNumber" href="#">3</a>
+        <a href="#" class="next"><i class="fa fa-mail-forward"></i></a>
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+  <!-- Columna Derecha -->
+  <div class="column side">
+  </div>
+
+</div>
+<!-- Fin Responzive -->
+
+<!--Fin contenido-->
+
+
+{% endblock %}

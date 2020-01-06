@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Productos | Mivex</title>
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Responzive -->
+<div class="row gb-color-gris-1">
+  <!-- Columna Izquierda -->
+  <div class="column side">
+        
+  </div>
+
+  <!-- Columna Medio -->
+  <div class="column middle">
+<div class="gb-row">
+
+    <form action="/user" method="POST" id="miForm">
+        <input type="text" id="name" name='name' >
+        <input type="password" id="pass" name='password'>
+        <input type="submit" value="Enviar" id="btnSend">
+      </form>
+
+</div>
+
+</div>
+
+  <!-- Columna Derecha -->
+  <div class="column side">
+  </div>
+
+</div>
+<!-- Fin Responzive -->
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Productos | Mivex</title>
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Responzive -->
+<div class="row gb-color-gris-1">
+  <!-- Columna Izquierda -->
+  <div class="column side">
+        
+  </div>
+
+  <!-- Columna Medio -->
+  <div class="column middle">
+<div class="gb-row">
+
+  {% for n in contact %}
+  <div class="gb-column_4">
+      <a href="#!" style="text-decoration: none; color:black;">
+    <div class="gb-card_3">
+        <div class="gb-content-img">
+      <img src="{{ url_for('static',filename=n.2) }}">
+        </div>
+      <p>{{n.1}}</p>
+    </div>
+      </a>
+  </div>
+  {% endfor %}
+ 
+</div>
+
+<div class="gb-row">
+
+  <div class="content-paginacion">
+    <div class="paginacion">
+      <a href="#" class="prev"><i class="fa fa-mail-reply"></i></a>
+      <a class="pageNumber active-pagination" href="#">1</a>
+      <a class="pageNumber" href="#">2</a>
+      <a class="pageNumber" href="#">3</a>
+      <a href="#" class="next"><i class="fa fa-mail-forward"></i></a>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+  <!-- Columna Derecha -->
+  <div class="column side">
+  </div>
+
+</div>
+<!-- Fin Responzive -->
+{% endblock %}
